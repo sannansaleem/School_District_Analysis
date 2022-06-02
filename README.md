@@ -6,7 +6,7 @@ While python in itself is a powerful programming language that can be used to bu
 The purpose of this project is to conduct a school district analysis as well as an analysis of hte individual schools themselves using the afformentioned programming language and its dependencies. The data we are analyzing comes in the form of two csv files containing school and student data which provide insight on how well students are performing, the size of school budgets and overall priorities. By merging this information, we are able to evaluate the math and reading grades for Thomas High School students specifically, to untimately indicate whether or not there exists evidence of academic dishonesty, as the grades for ninth grade students appear to have been altered. In order to determine this, a comparative analysis will be completed which will indicate whether replacing math and reading scores for Thomas High School ninth grade students with NaN's (not a number), will affect the overall analysis.
 
 # <ins> Results </ins>
-## <ins> How is the district summary affected? <ins>/
+## <ins> How is the district summary affected? </ins>
 There was a negligible change found after the refactorization of the district summary upon replacing 9th grade scores wiht "NaN's". As the district summary summarizes and outputs data on all schools and not that specifically per school as we see in the next section, the results are in line with what we would expect (negligible change), since the redaction of a handfull of students in a large sample (~ 39,000 students) would not have a profund effect on the metrics outputted. The changes that we do see are as follows:
 1. :arrow_down: in average my scores by 0.1%
 2. :arrow_down: in % passing math by 0.2%
@@ -81,17 +81,20 @@ The refactored code implicates that all 9th grader scores have been replaced by 
 </p>
 
  ### <ins> Scores by school spending </ins>
+Scores by scool spending were minutely affected as follows:
+1. ⬆️ in % overall passing by 0.1% for the $630-644 spending bracket
+2. :arrow_up: in % overall passing by 0.5% for the $645-675 spending bracket
 
-Replacing the ninth-graders scores does not actually affect the scores by schools spending because by the time we run this code, we will have replaced the overall Thomas High School passing scores in the dataframe with data for only the 10th through 12th grade and will not even count the ninth graders data in this analysis. So the scores by school spending dataframe remains unchanged. If we had caclulated this data before updating the frame to only show for 10th through 12th, the school spend per student would be much higher. I noticed in this code, that our challenge didn't ask us to update the dataframe for total students at Thomas High School to show as only 1,173 (1635 - 461 ninth graders). If the code had asked us to update our dataframe for total students from Thomas High School to be only 1,173 (10th Grade to 12th Grade Only), then the total spend per student would be much higher at $889.28 and would bump this school way up on the spending range per student. 
+The data utilized only takes into account passing students at Thomas high from grades 10 through 12 (since all ninth graders data have been replaced with NaN), and it is for ths reason that the data frame remains realtively unchnaged. Should the data frame have been representative of grades 10-12 while taking all 9th graders into account, the amount spent per student would have greatly increased. Had the refactored code reflected the dataset of 1,173 students (1635 (total students) - 461 (ninth graders)) a result of $889.28 would have been calculated and would subsequently increase the standing of Thomas High under comparison against the different schools found within the district
 
 #### Scores by School Spending Original 
 <p align="center">
-<img src="resources/img/spending_summary_module.png" width="" height="">  
+<img src="resources/img/per_school_spending_module.png" width="" height="">  
 </p>
 
 #### Scores by School Spending Refactored
 <p align="center">
-<img src="resources/img/spending_summary_refactored.png" width="" height="">
+<img src="resources/img/per_school_spending_refactored.png" width="" height="">
 </p>
 
 ### <ins> Scores by school size </ins>
@@ -99,12 +102,12 @@ When we view the dataframes for scores by school size, we encounter the same phe
 
 #### Scores by School Size Original 
 <p align="center">
-<img src="resources/img/size_summary_module.png" width="" height=""> 
+<img src="resources/img/per_school_size_module.png" width="" height=""> 
 </p>
 
 #### Scores by School Size Refactored
 <p align="center">
-<img src="resources/img/size_summary_refactored.png" width="" height="">
+<img src="resources/img/per_school_size_refactored.png" width="" height="">
 </p>
 
 ### <ins> Scores by school type </ins>
