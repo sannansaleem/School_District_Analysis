@@ -14,11 +14,19 @@ There was a negligible change found after the refactorization of the district su
 4. :arrow_down: in % overall passing by 0.1%
 
 ### Code to replace 9th grade with NaN
-![NaN code](resources/img/NaN_replacement.png)
+<p align="center">
+<img src="resources/img/NaN_replacement.png" width="" height="">  
+</p>
+ 
 ### Original District Summary
-![Module DataFrame](resources/img/district_summary_module.png)
+<p align="center">
+<img src="resources/img/district_summary_module.png" width="" height="">  
+</p>
+ 
 ### Refactored District Summary
-![refactored DataFrame](resources/img/district_summary_refactored.png)
+<p align="center">
+<img src="resources/img/district_summary_refactored.png" width="" height="">  
+</p>
 
 ## <ins> How is the school summary affected? </ins>
 Upon replacing 9th grade students data with "NaN" an output of the summary per school was created. As can be seen from the data drawn up [before](resources/img/per_school_summary_module.png) and [after](resources/img/per_school_summary_refactored.png) there is an overall drop in all metrics pertaining to Thomas High School, save for informataion presenteed in the first five columns as they are not grade/student dependant. Most notably we see the following changes:
@@ -27,9 +35,14 @@ Upon replacing 9th grade students data with "NaN" an output of the summary per s
 3. :arrow_down: in % overall passing by 25.87%
 
 ### Original Per School Summary
-![Per School Summary module](resources/img/per_school_summary_module.png)
+<p align="center">
+<img src="resources/img/per_school_summary_module.png" width="" height="">  
+</p>
+
 ### Refactored Per School Summary
-![Per School Summary refactored](resources/img/per_school_summary_refactored.png)
+<p align="center">
+<img src="resources/img/per_school_summary_refactored.png" width="" height="">  
+</p>
 
 ## <ins> How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools? </ins>
 Replacing the ninth graders' math and reading scores with Nan values clearly affects Thomas High School's performance relative to the other schools as could be viewed by the per school summary intally. As already previously mentioned,
@@ -39,12 +52,19 @@ Replacing the ninth graders' math and reading scores with Nan values clearly aff
 When sorted by top 5 schools by % overall passing, Thomas High School comes in ranked second place when using the dataset that was all inclusive. However, when substituting "Nan" for the inaccurate values, Thomas High School's standings amongst other schools consiquently drops bringing it's standing compared to the other schools much lower, effectively dropping out of the top 5 performig schools by overall passing completely. 
 
 ### Original Top Performing Schools Code
-![top 5 code](resources/img/top_five_code.png)
+<p align="center">
+<img src="resources/img/top_five_code.png" width="" height="">  
+</p>
+ 
 ### Original Top Performing Schools
-![top 5 module](resources/img/top_five_module.png)
+<p align="center">
+<img src="resources/img/top_five_module.png" width="" height="">  
+</p>
+ 
 ### Thomas High School's % Passing after Excluding False Data
-![top 5 refactored](resources/img/top_five_refactored.png)
-
+<p align="center">
+<img src="resources/img/top_five_refactored.png" width="" height="">  
+</p>
 
 ## <ins> How does replacing the ninth-grade scores affect the following: </ins> 
 ### <ins> Math and reading scores by grade </ins>
