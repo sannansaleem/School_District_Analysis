@@ -98,7 +98,7 @@ The data utilized only takes into account passing students at Thomas high from g
 </p>
 
 ### <ins> Scores by school size </ins>
-When we view the dataframes for scores by school size, we encounter the same phenomenon as we did in the last section (scores by spending), in that the data remains relatively unchanged from the first dataframe to the second, because we eliminated the ninth grader information from the average and passing scores, but the challenge code never asked us to update the total student number. For this reason, and because the 10th-12th graders had relatively the same scores as was counted in the original code with the inaccurate data of the 9th graders, we can see that there is really no difference of output below. Also the school size (even if we subtract the amount of 9th grader students), remains in the Medium Range(1,000 - 2,000). 
+Data frames for scores according to school size present as unchanged form our original data, the reasoning for this is that ninth grade student data has been ommited (from avg and passing scores).
 
 #### Scores by School Size Original 
 <p align="center">
@@ -111,7 +111,7 @@ When we view the dataframes for scores by school size, we encounter the same phe
 </p>
 
 ### <ins> Scores by school type </ins>
-In this next section, we again see the same type of outcome that we saw in the previous two sections. The data remains unchanged in the scores by school type because again, we have eliminated the 9th grade null data, and replaced our datasets with only the passing grade info from 10th to 12th grade. If we left the dataset as affected by the null values, we would see a change in the scores, however at the end of the challenge code, we replaced this lower data, with info that shows just from the 10th-12th grades, which bring our scores back to the same as they were originally. 
+Data frames for scores according to school type present as unchanged form our original data, the reasoning for this is that ninth grade student data has been ommited (from avg and passing scores) leaving only passing information for grades 10-12.
 
 #### Scores by School Type Original
 <p align="center">
