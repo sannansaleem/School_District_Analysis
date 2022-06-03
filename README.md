@@ -133,7 +133,10 @@ Updating the Data frame to show values for Thomas high including only students i
 1. replacing 9th grade values with NaN brought down all the metrics in question save for budget allocation, school size, and type as those variables are independant of the student.
 
 upon updating the data to include 10th-12th grade students we see:
+
 2. ⬆️ % Passing Math Scores for Thomas High School to 93 (initial value of 66.9)
+
 3. ⬆️ % Passing Reading for Thomas High School to 97 (initial value of 69.6)
+
 4. ⬆️ % overall passing for Thomas High School to 90 (initial value of 65) 
 
