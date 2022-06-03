@@ -97,6 +97,8 @@ The data utilized only takes into account passing students at Thomas high from g
 <img src="resources/img/per_school_spending_refactored.png" width="" height="">
 </p>
 
+Furthermore, minimal to no change at all was reported when grouping all schools together according to their school spending (per student) as it relates to average math/reading score, % passing math/reading, and % overall passing upon examination of the [original grouped by spending data frame](resources/img/spending_summary_module.png) against the [refactored grouped by spending data frame](resources/img/spending_summary_refactored.png)
+
 ### <ins> Scores by school size </ins>
 Data frames for scores according to school size present as unchanged form our original data, the reasoning for this is that ninth grade student data has been ommited (from avg and passing scores).
 
@@ -109,6 +111,8 @@ Data frames for scores according to school size present as unchanged form our or
 <p align="center">
 <img src="resources/img/per_school_size_refactored.png" width="" height="">
 </p>
+
+Furthermore, minimal to no change at all was reported when grouping all schools together according to their school size as it relates to average math/reading score, % passing math/reading, and % overall passing upon examination of the [original grouped by size data frame](resources/img/size_summary_module.png) against the [refactored grouped by size data frame](resources/img/size_summary_refactored.png)
 
 ### <ins> Scores by school type </ins>
 Data frames for scores according to school type present as unchanged form our original data, the reasoning for this is that ninth grade student data has been ommited (from avg and passing scores) leaving only passing information for grades 10-12.
