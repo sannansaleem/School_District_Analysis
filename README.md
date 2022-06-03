@@ -129,15 +129,11 @@ Data frames for scores according to school type present as unchanged form our or
 
 # Summary
 ## Summary of 4 Major Changes in Updated DataFrame
-Major changes to the school district analysis after reading and math scores have been replaced are: 
-  1) The first replacement of the 9th grade values with Nan bring down all the scores from Thomas High School across the board. But then, at the end of our code, we replace the      school summary code with code that only counts the 10th-12th grade passing data. This brings our data back up. In our final dataframe therefore: 
-  2) the grades % increased for Thomas High School so it went from a low performing to a high performing school
-  3) the % Passing Math Scores for Thomas High School returned back up to 93 from 66.9 
-  4) the % Passing Reading returned back up to 97 from 69.6 
-  5) the overall percentage of the passing returned back up to 90 from 65. 
-#### Code where we replace DataFrame with values for only 10th-12th. 
-![final replace](https://user-images.githubusercontent.com/73972332/102053894-575ffb80-3d9d-11eb-87f1-4ff15fa4a323.png)
-#### Before replacing the math & reading scores
-![Per School Summary Updated 2](https://user-images.githubusercontent.com/73972332/102052895-b886cf80-3d9b-11eb-973f-9d447b3749b8.png)
-#### After replacing the math & reading scores
-![Replacing math reading](https://user-images.githubusercontent.com/73972332/102053149-1b786680-3d9c-11eb-8c94-b41e1cda0c6a.png)
+Updating the Data frame to show values for Thomas high including only students in the 10th - 12th grades had the follwoing effects:
+1. replacing 9th grade values with NaN brought down all the metrics in question save for budget allocation, school size, and type as those variables are independant of the student.
+
+upon updating the data to include 10th-12th grade students we see:
+2. ⬆️ % Passing Math Scores for Thomas High School to 93 (initial value of 66.9)
+3. ⬆️ % Passing Reading for Thomas High School to 97 (initial value of 69.6)
+4. ⬆️ % overall passing for Thomas High School to 90 (initial value of 65) 
+
